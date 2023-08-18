@@ -1,0 +1,598 @@
+/* manrope-300 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/manrope-v14-cyrillic_latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* manrope-regular - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/manrope-v14-cyrillic_latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* manrope-500 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/manrope-v14-cyrillic_latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* manrope-600 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/manrope-v14-cyrillic_latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* manrope-700 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/manrope-v14-cyrillic_latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* manrope-800 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/manrope-v14-cyrillic_latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  height: 100vh;
+  font-family: "Manrope", sans-serif;
+  font-style: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f6ff;
+}
+
+/* HEADER */
+.header {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container {
+  width: 100%;
+  max-width: 1870px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+.logo {
+  width: 480px;
+  height: 70px;
+  padding-right: 108px;
+  padding-left: 103px;
+  padding-top: 8px;
+  padding-bottom: 7px;
+}
+.header-nav {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  padding-right: 119px;
+}
+.header-list {
+  display: flex;
+  list-style: none;
+}
+.header-item {
+  margin-right: 20px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  font-family: "Manrope", sans-serif;
+  color: var(--unnamed, #333);
+}
+
+.header-item-link {
+  display: flex;
+  position: relative;
+}
+
+.header-item-link::before {
+  color: #333;
+  font-weight: 500;
+  display: inline-block;
+  content: "";
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  background-color: aqua;
+  bottom: 0;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.header-item-link:hover::before {
+  width: 100%;
+}
+
+.header-button {
+  padding: 14px 183px 14px 42px;
+  /* padding: 14px 33px 14px 42px; */
+  font-weight: 600;
+  font-style: 16px;
+  line-height: 26px;
+  color: #fff;
+  padding-left: 159px;
+  border-radius: 9px;
+  background: linear-gradient(122deg, #f32c4c 29.57%, #cb1d95 85.47%);
+}
+/* HEADER */
+
+/* MAIN */
+main {
+  height: 100%;
+}
+
+.bigger-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-new-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-first-section {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f7f6ff;
+  padding-bottom: 141px;
+}
+.container {
+}
+
+.first-h1 {
+  font-size: 45px;
+  font-weight: 800;
+  line-height: 65px;
+  width: 463px;
+  color: var(--unnamed, #333);
+  padding-top: 108px;
+  padding-bottom: 4px;
+}
+img {
+}
+
+.plast {
+  font-family: "Manrope", sans-serif;
+  color: var(--unnamed, #333);
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: #333;
+}
+.plast-p {
+  color: var(--unnamed, #333);
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding-bottom: 29px;
+  font-size: 16px;
+}
+.maain-btn-1 {
+  padding: 14px 30px 14px 30px;
+  color: var(--unnamed, #fff);
+  font-family: Manrope;
+  font-size: 16px;
+  line-height: 26px;
+  border-radius: 250px;
+  background: #77b2d3;
+  border-right: 10px;
+  font-style: normal;
+  font-weight: 600;
+}
+.maain-btn-2 {
+  padding: 14px 13px 14px 23px;
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  border-radius: 250px;
+  background: #77b2d3;
+  color: var(--unnamed, #fff);
+  font-family: "Manrope", sans-serif;
+}
+.maain-btn-3 {
+  padding: 14px;
+  padding-right: 9px;
+  font-weight: 600;
+  line-height: 26px;
+  border-radius: 250px;
+  background: #77b2d3;
+  width: 141px;
+  height: 54px;
+  color: var(--unnamed, #fff);
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+}
+
+.maain-btn-1:hover {
+  color: #6788bd;
+}
+.maain-btn-2:hover {
+  color: #4368a2;
+}
+.maain-btn-3:hover {
+  color: #4368a2;
+}
+.girl-boy {
+  margin-right: 100px;
+  margin-left: 151px;
+  width: 573px;
+  height: 325px;
+}
+
+/* SECTION */
+
+/* MAIN */
+.number {
+  box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.08);
+  margin-top: 90px;
+  background: var(--unnamed, #fff);
+}
+.headliner {
+  border-radius: 20px;
+  padding-left: 53px;
+  line-height: 65px;
+
+  padding-top: 40px;
+  font-size: 50px;
+  margin-bottom: 35px;
+  font-weight: 700;
+  color: #333;
+  font-family: "Manrope", sans-serif;
+}
+.cards {
+  display: flex;
+  justify-content: space-around;
+}
+.number-card {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container {
+  padding: 0;
+}
+
+.number-desc {
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 0;
+  margin-right: 0;
+  align-items: center;
+  border-right: 1px solid #c7c7c7;
+  width: 480px;
+  display: flex;
+}
+.number-desc:last-child {
+  border-right: 0;
+}
+.number-title {
+  line-height: 48px;
+  -webkit-text-fill-color: transparent;
+  font-family: "Manrope", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  background: var(--3, linear-gradient(122deg, #f32c6d 29.57%, #cb1d95 85.47%));
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.number-text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  padding-bottom: 56px;
+  color: var(--unnamed, #333);
+  font-family: "Manrope", sans-serif;
+}
+
+/* FEATURE LIST */
+/* SERVICES */
+.services {
+  display: flex;
+  justify-content: space-between;
+}
+.services-cards {
+  margin-top: 16px;
+}
+.services-title {
+  display: flex;
+  justify-content: center;
+  width: 480px;
+  font-weight: 700;
+  font-size: 41px;
+  line-height: 1.2;
+  margin-top: 128px;
+  padding-right: 1800px;
+  font-family: "Manrope";
+}
+.card {
+  box-shadow: 0px 4px 18px 0px #00000014;
+  margin-right: 48px;
+  display: flex;
+  justify-content: space-between;
+  height: 608px;
+  width: 352px;
+  flex-direction: column;
+}
+.card-top {
+  width: 100%;
+
+  height: 144px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 18px 0px #00000014;
+  border-radius: 16px 16px 0 0;
+  margin-bottom: 48px;
+  padding: 16px 16px;
+  background-color: #9fd3f1;
+  display: flex;
+  width: 320px;
+}
+.top-title {
+  font-family: "Manrope";
+  font-weight: 800;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.card-desc {
+  display: flex;
+  margin-bottom: 18px;
+}
+.card-bottom {
+  margin-top: 96px;
+  display: flex;
+  justify-content: start;
+}
+
+.bottom-text {
+  margin-bottom: 64px;
+  display: inline-block;
+  color: #cb1d95;
+  font-size: 40px;
+}
+.card-button {
+  background: linear-gradient(115.11deg, #f32c6d 10.12%, #cb1d95 100.01%);
+  font-weight: 600;
+  color: #fff;
+  padding: 22px 86px;
+  border-radius: 16px;
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+}
+.cards-text {
+  font-weight: 400;
+  font-family: "Manrope";
+  color: #333;
+  line-height: 19px;
+}
+
+/* CONSULT */
+.consult {
+  margin-top: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+.consulting {
+  /* display: flex; */
+  align-items: center;
+}
+.consult-title {
+  width: 100%;
+  max-width: 896px;
+}
+.consult-desc {
+  font-size: 61px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-bottom: 37px;
+}
+.consult-text {
+  font-weight: 400;
+  color: #333;
+  line-height: 1.2;
+  margin-bottom: 37px;
+}
+.input {
+  display: flex;
+}
+.input-bottom {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.name {
+  width: 432px;
+  height: 96px;
+  margin-right: 48px;
+}
+.input-text {
+  width: 912px;
+  height: 224px;
+}
+.checkboks {
+  display: flex;
+}
+.checkbox {
+  margin-right: 11px;
+}
+/* WORK */
+.works {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.work-desc {
+  width: 100%;
+  max-width: 912px;
+  background-color: #fff;
+  display: inline;
+  margin-right: 48;
+  border-radius: 15px;
+  background: var(--unnamed, #fff);
+  box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.08);
+}
+.work-desc-top {
+  margin-bottom: 38px;
+  padding: 16px;
+}
+.alibaba img {
+  width: 240px;
+  height: 176px;
+}
+.macys img {
+  width: 160px;
+  height: 80px;
+}
+.work-top-text {
+  width: 800px;
+  font-weight: 400;
+  font-family: "Manrope";
+  line-height: 1.6;
+  color: #333;
+  font-size: 26px;
+}
+.work-desc-center {
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 32px;
+  background-color: #f3f1fe;
+}
+.work-center-text {
+  line-height: 1.4;
+  font-size: 29px;
+  font-weight: 800;
+}
+.boxs {
+  display: flex;
+  margin-top: 48px;
+}
+.box {
+  width: 100%;
+  max-width: 168px;
+  margin-right: 54px;
+  line-height: 1.6;
+}
+
+.work-bottom-text {
+  margin-bottom: 20px;
+}
+
+/* footer */
+
+footer {
+  height: 328px;
+  padding-top: 900px;
+}
+
+.footer {
+  padding-top: 90px;
+}
+
+.footer-top {
+  background: var(--unnamed, #fff);
+  box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.08);
+}
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.item-text {
+  font-weight: 600;
+  color: #333;
+  line-height: 2.25;
+  margin-bottom: 24px;
+}
+.footer-item {
+  display: flex;
+  flex-direction: column;
+}
+.footer-item a {
+  margin-bottom: 16px;
+  font: size 22px;
+  color: #333;
+}
+.footer-top-link {
+  line-height: 1.5;
+  color: #333;
+}
+.left-link {
+  margin-bottom: 48px;
+}
+.footer-links:hover {
+  color: #f32c6d;
+}
+.btn {
+  color: #fff;
+  width: 400px;
+  padding: 16px 16px;
+  border-radius: 32px;
+  border-radius: 9px;
+  background: var(--3, linear-gradient(122deg, #f32c6d 29.57%, #cb1d95 85.47%));
+}
+
+.gtn:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 2240px;
+  height: 64px;
+  background: #2d2d2d;
+  color: #fff;
+}
+.footer-bottom-text {
+  font-size: 22px;
+}
